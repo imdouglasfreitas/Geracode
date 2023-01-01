@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8">
+    <title>GeraCode</title>
+  </head>
+  <body>
+
+  <h1> Gerador de QRcode</h1>
+  <p></p>
+  <p>Gere qrcode para seu Instagram, Whatsapp, Facebook, Pinterest e para qualquer link que quiser</p>
+
+
+    <form action="/gerar_qrcode" method="post">
+      <label for="link">Link:</label>
+      <input type="text" name="link" id="link">
+      <input type="submit" value="Gerar QR code">
+    </form>
+
+    <!-- Exibe o QR code gerado (se houver) -->
+    {% if img %}
+      <img src="{{ img }}" alt="QR code">
+    {% endif %}
+
+    <a href="static/images/qrcode.png" download class="botao-download">Baixar QR Code</a>
+
+
+  </body>
+
+</html>
