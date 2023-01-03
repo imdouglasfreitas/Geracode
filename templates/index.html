@@ -4,33 +4,33 @@
     <meta name="google-site-verification" content="X7d3Wh2mvQLD2zhcpzLmsGo-Omzo1ssoDVNXA7GBEno" />
     <meta charset="UTF-8">
     <title>Gerador de QR Code Gratuito - Geracode</title>
-      <meta name="description" content="O Geracode é uma ferramenta online gratuita para criar QR Codes personalizados em poucos minutos.">
+    <meta name="description" content="O Geracode é uma ferramenta online gratuita para criar QR Codes personalizados em poucos minutos.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
   <h2>Geracode - Gerador de QRcode Gratuito</h2>
-  <p></p>
+  <h2> </h2>
   <!<img src="qr-code-gerador.jpg" alt="Tela do gerador de QR Code do Geracode" style="width: 200px; height: 200px;">
-  <p></p>
-  <p></p>
+  <h2> </h2>
   <h3>O Geracode é uma ferramenta online gratuita que permite criar QR Codes personalizados em poucos minutos.</h3>
   <P>Basta escolher o tipo de QR Code que você deseja criar (Instagram, Whatsapp, Facebook, Pinterest, URL, texto, e-mail, etc)</p>
-  <p></p>
+  <h1> </h1>
   <p> Insira o link e clique em gerar qrcode.</p>
-  <p></p>
 
     <form action="/gerar_qrcode" method="post">
       <label for="link">Link:</label>
-      <input type="text" name="link" id="link">
-      <input type="submit" value="Gerar QR code">
+      <input type="text" name="link" id="link" style="width: 50%; max-width: 300px; margin: 0 auto;">
+      <input type="submit" value="Gerar QR code" style="width: 50%; max-width: 300px; margin: 0 auto;">
     </form>
 
     <!-- Exibe o QR code gerado (se houver) -->
     {% if img %}
       <img src="{{ img }}" alt="QR code">
     {% endif %}
-
+   <h1> </h1>
     <p>O QR Code gerado pode ser baixado e utilizado em qualquer lugar.</p>
+   <h2> </h2>
     <a href="static/images/qrcode.png" download class="botao-download">Baixar QR Code</a>
 
 
