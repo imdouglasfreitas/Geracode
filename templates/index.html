@@ -15,8 +15,6 @@
     <br>
     <h4 style="font-weight: bold;">O Geracode é uma ferramenta online gratuita que permite criar QR Codes personalizados em poucos segundos.</h4>
     <br>
-    <h5>Basta escolher o tipo de QR Code que você deseja criar (Instagram, Whatsapp, Facebook, Pinterest, URL, texto, e-mail, etc)</h5>
-    <br>
     <h3> Insira o link e clique em Gerar QR code</h3>
 
     <form action="/gerar_qrcode" method="post">
@@ -24,7 +22,8 @@
      <input type="text" name="link" id="link" style="border: 1px none; width: 50%; max-width: 300px; margin: 0 auto; border-radius: 300px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);">
      <input type="submit" value="Gerar QR code" style="border: 1px none; background-color: #F2F2F2; width: 30%; max-width: 150px; margin: 0 auto;border-radius: 20px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);"></h3>
     </form>
-
+    <br>
+     <h5 style="font-style: italic;">Basta escolher o tipo de QR Code que você deseja criar (Instagram, Whatsapp, Facebook, Pinterest, URL, texto, e-mail, etc)</h5>
     <!-- Exibe o QR code gerado (se houver) -->
     {% if img %}
       <img src="{{ img }}" alt="QR code">
