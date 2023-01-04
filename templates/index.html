@@ -11,14 +11,13 @@
   </head>
   <body>
     <body style="font-family: 'Roboto', sans-serif;">
-    <h2>Geracode - Gerador de QRcode Gratuito</h2>
-    <h2> </h2>
-    <!<img src="qr-code-gerador.jpg" alt="Tela do gerador de QR Code do Geracode" style="width: 200px; height: 200px;">
-    <h2> </h2>
-    <h4 style="font-weight: bold;">O Geracode é uma ferramenta online gratuita que permite criar QR Codes personalizados em poucos segundos.</h4>
-    <h5>Basta escolher o tipo de QR Code que você deseja criar (Instagram, Whatsapp, Facebook, Pinterest, URL, texto, e-mail, etc)</h5>
-    <h1> </h1>
-    <h5> Insira o link e clique em Gerar QR code</h5>
+    <img src="static/images/Geracode - Gerador de QRcode Gratuito.jpg" alt="Geracode - Gerador de QRcode Gratuito" style="width: 100%; max-width: 500px object-fit: cover;">
+    <br>
+    <h3 style="font-weight: bold;">O Geracode é uma ferramenta online gratuita que permite criar QR Codes personalizados em poucos segundos.</h3>
+    <br>
+    <h4>Basta escolher o tipo de QR Code que você deseja criar (Instagram, Whatsapp, Facebook, Pinterest, URL, texto, e-mail, etc)</h4>
+    <br>
+    <h4> Insira o link e clique em Gerar QR code</h4>
 
     <form action="/gerar_qrcode" method="post">
       <p><label for="link">Link:</label>
@@ -30,10 +29,30 @@
     {% if img %}
       <img src="{{ img }}" alt="QR code">
     {% endif %}
-   <h1> </h1>
-    <h5>O QR Code gerado pode ser baixado e utilizado em qualquer lugar.</h5>
+   <br>
+    <h4>O QR Code gerado pode ser baixado e utilizado em qualquer lugar.</h4>
    <h2> </h2>
     <a href="static/images/qrcode.png" download class="botao-download" style="color: black; background-color: #E6FAF0; padding: 5px; border: none;">Clique para baixar QR Code</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div data-lazy>
+      <h2>O que é Qr Code?</h2>
+      <br>
+      <h3  style="text-align: justify; max-width: 800px; height: auto; line-height: 1.5;" > QR Code (sigla para Quick Response Code, ou Código de Resposta Rápida em português) é um tipo de código de barras bidimensional que pode armazenar informações e ser lido por aparelhos eletrônicos, como smartphones e tablets. Eles são usados em uma variedade de aplicações, como no rastreamento de produtos, na geração de bilhetes eletrônicos para eventos, no acesso a sites e até mesmo em campanhas publicitárias.
+
+ Mas você sabia que os QR Codes foram criados no Japão pela empresa Denso Wave, em 1994? Eles foram originalmente desenvolvidos para facilitar o rastreamento de peças de automóveis na indústria automotiva. Hoje em dia, os QR Codes são utilizados em todo o mundo e estão presentes em praticamente todos os setores da indústria.
+
+ Outra curiosidade sobre os QR Codes é que eles podem armazenar uma grande quantidade de informações em um espaço muito pequeno. Enquanto um código de barras tradicional pode armazenar apenas 20 dígitos, um QR Code pode armazenar até 7089 caracteres alfanuméricos! Isso significa que é possível armazenar praticamente qualquer tipo de informação em um QR Code, desde um simples endereço de website até um currículo completo.
+
+ Em resumo, os QR Codes são códigos de barras bidimensionais que facilitam a troca rápida de informações e são usados em uma ampla variedade de aplicações. Eles foram criados no Japão e podem armazenar uma quantidade surpreendente de informações em um espaço muito pequeno. Espero que você tenha gostado dessas curiosidades sobre os QR Codes!
+        </h3>
+    </div>
 
   </body>
 
