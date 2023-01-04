@@ -8,20 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-
-  <h2>Geracode - Gerador de QRcode Gratuito</h2>
-  <h2> </h2>
-  <!<img src="qr-code-gerador.jpg" alt="Tela do gerador de QR Code do Geracode" style="width: 200px; height: 200px;">
-  <h2> </h2>
-  <h3>O Geracode é uma ferramenta online gratuita que permite criar QR Codes personalizados em poucos minutos.</h3>
-  <P>Basta escolher o tipo de QR Code que você deseja criar (Instagram, Whatsapp, Facebook, Pinterest, URL, texto, e-mail, etc)</p>
-  <h1> </h1>
-  <p> Insira o link e clique em gerar qrcode.</p>
+    <body style="font-family: 'Roboto', sans-serif;">
+    <h2>Geracode - Gerador de QRcode Gratuito</h2>
+    <h2> </h2>
+    <!<img src="qr-code-gerador.jpg" alt="Tela do gerador de QR Code do Geracode" style="width: 200px; height: 200px;">
+    <h2> </h2>
+    <h4 style="font-weight: bold;">O Geracode é uma ferramenta online gratuita que permite criar QR Codes personalizados em poucos segundos.</h4>
+    <h5>Basta escolher o tipo de QR Code que você deseja criar (Instagram, Whatsapp, Facebook, Pinterest, URL, texto, e-mail, etc)</h5>
+    <h1> </h1>
+    <h5> Insira o link e clique em Gerar QR code</h5>
 
     <form action="/gerar_qrcode" method="post">
-      <label for="link">Link:</label>
-      <input type="text" name="link" id="link" style="width: 50%; max-width: 300px; margin: 0 auto;">
-      <input type="submit" value="Gerar QR code" style="width: 50%; max-width: 300px; margin: 0 auto;">
+      <p><label for="link">Link:</label>
+      <input type="text" name="link" id="link" style="width: 50%; max-width: 300px; margin: 0 auto;"></p>
+      <input type="submit" value="Gerar QR code" style="border: 1px none; background-color: #F2F2F2; width: 30%; max-width: 150px; margin: 0 auto;">
     </form>
 
     <!-- Exibe o QR code gerado (se houver) -->
@@ -29,10 +29,9 @@
       <img src="{{ img }}" alt="QR code">
     {% endif %}
    <h1> </h1>
-    <p>O QR Code gerado pode ser baixado e utilizado em qualquer lugar.</p>
+    <h5>O QR Code gerado pode ser baixado e utilizado em qualquer lugar.</h5>
    <h2> </h2>
-    <a href="static/images/qrcode.png" download class="botao-download">Baixar QR Code</a>
-
+    <a href="static/images/qrcode.png" download class="botao-download" style="color: white; background-color: #3885FF; padding: 5px; border: none;">Clique para baixar QR Code</a>
 
   </body>
 
